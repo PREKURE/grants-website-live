@@ -1,0 +1,41 @@
+/*
+Theme Name:       Grant KPI
+Theme URI:        https://profgrantschofield.com
+Version:          v0.1
+Description:      Custom KPI Theme
+Author:           Ben Jennings
+Template:         hello-elementor
+Template Version: 3.1.1
+GitHub Theme URI: https://github.com/PREKURE/kpi-grant
+*/
+
+/* Global Hides */
+.updraft-ad-container,
+.e-notice[data-notice_id="experiment_promotion"] {
+	display: none !important;
+}
+
+/* Custom post <ul> styling */
+.post ul,
+.entry-content ul {
+    margin-bottom: 2em; /* Blank space at the bottom of the <ul> */
+    padding-left: 2em;
+}
+
+.post ul li,
+.entry-content ul li {
+    margin-bottom: 1em; /* 1 blank line of space between each <li> */
+}
+
+/* Remove last <li> margin for cleaner look */
+.post ul li:last-child,
+.entry-content ul li:last-child {
+    margin-bottom: 0;
+} 
+
+/* Header Book Btn */
+header .menu-item-2858{background-color:var(--e-global-color-button_bg);}
+header .menu-item-2858 a{color:var(--e-global-color-button_text)!important;}
+header .menu-item-2858:hover{background-color:var(--e-global-color-button_hover_bg);}
+header .menu-item-2858:hover a{color:var(--e-global-color-button_hover_text)!important;}
+header .menu-item:not(.menu-item-2858) a{text-shadow:1px 1px 3px rgba(0, 0, 0, 0.1)!important;}
